@@ -6,8 +6,8 @@ const options = {
   useNewUrlParser: true,
 }
 
-let client
-let clientPromise
+let client:any;
+let clientPromise:any;
 
 if (!process.env.MONGODB_URI) {
   throw new Error('Please add your Mongo URI to .env.local')
